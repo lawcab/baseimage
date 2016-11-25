@@ -3,7 +3,9 @@ FROM ubuntu:14.04
 MAINTAINER Lawrence Cabal <lawcab@gmail.com>
 
 # Install LXDE, VNC server and Firefox
-RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install -y \
+RUN apt-get update
+RUN apt-get -yqq upgrade
+RUN DEBIAN_FRONTEND=noninteractive apt-get install -y \
   lxde-core \
   lxterminal \
   expect \
