@@ -24,6 +24,8 @@ RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install -y \
 ENV USER root
 # Set default password
 COPY password.sh /opt/
+RUN cd /opt \
+&& chmod u+x password.sh
 RUN /opt/password.sh
 # Expose VNC port
 EXPOSE 5901
