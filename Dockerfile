@@ -37,3 +37,5 @@ ENV LANGUAGE en_US:en
 ENV LC_ALL en_US.UTF-8
 
 COPY vnc.sh /opt/
+RUN cd /opt \
+&& chmod u+x vnc.sh
