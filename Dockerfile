@@ -1,5 +1,5 @@
 # Start with Ubuntu base image
-FROM ubuntu:14.04
+FROM ubuntu:18.10
 MAINTAINER Lawrence Cabal <lawcab@gmail.com>
 
 # Install LXDE, VNC server and Firefox
