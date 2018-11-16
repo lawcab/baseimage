@@ -33,7 +33,7 @@ RUN /opt/password.sh
 EXPOSE 5901
 
 # Set the locale
-RUN locale-gen en_US.UTF-8  
+#RUN locale-gen en_US.UTF-8  
 ENV LANG en_US.UTF-8  
 ENV LANGUAGE en_US:en  
 ENV LC_ALL en_US.UTF-8
